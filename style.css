@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* color palette:   #247ba0 for a blue background
+                    #254d32 for quiz area background
+                    #f9db6d for text and some shades
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #247ba0;
+    color: #f9db6d;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+
+.welcome-area {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: 2rem;
+    width: 30rem;
+    text-align: center;
+    margin: 1rem;
+    text-decoration: none;
+    color: #f9db6d;
+    background-color: #254d32;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 1rem 1.5rem #f9db6d;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscores-btn {
+    background: #d33f04d3;
+}
