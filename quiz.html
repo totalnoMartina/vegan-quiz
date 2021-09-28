@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,10 @@
 
     <title>Quiz Page</title>
 </head>
+
 <body>
     <div class="quiz-area">
-        <div id="quiz" class="flex-column justify-center">
+        <div id="quiz" class="justify-center flex-column">
             <div id="display-quiz">
                 <div class="display-item">
                     <p id="progress-text" class="display-prefix">Question</p>
@@ -19,9 +21,31 @@
                         <div id="progress-bar-full"></div>
                     </div>
                 </div>
+                <div class="display-item">
+                    <p id="display-prefix">
+                        Score</p>
+                    <h1 class="display-main-text" id="score">0</h1>
+                </div>
             </div>
-
+        </div id="question">Eating half of avocado a day helps with...?
+        <div class="choice-display">
+            <p id="choice-prefix">A</p>
+            <p class="choice-text" data-number="1">answer</p>
         </div>
-    
+        <div class="choice-display">
+            <p id="choice-prefix">B</p>
+            <p class="choice-text" data-number="2">answer</p>
+        </div>
+        <div class="choice-display">
+            <p id="choice-prefix">C</p>
+            <p class="choice-text" data-number="3">answer</p>
+        </div>
+        <div class="choice-display">
+            <p id="choice-prefix">D</p>
+            <p class="choice-text" data-number="4">answer</p>
+        </div>
+
+        <script src="quiz.js"></script>
 </body>
+
 </html>

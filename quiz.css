@@ -1,0 +1,9 @@
+body {
+    color: #f9db6d;
+}
+
+.choice-display {
+    display: flex;
+    margin-bottom: 0.8rem;
+    max-width: 100%;
+}
