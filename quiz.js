@@ -1,8 +1,8 @@
-const question = document.getElementById('question');
-const choices = Array.from.getElementsByClassName('choice-text');
-const progressText = document.getElementById('progress-text');
-const scoreText = document.getElementById('score');
-const progressBarFull = document.getElementById('progress-bar-full');
+const question = document.querySelector('#question');
+const choices = Array.from.querySelector('.choice-text');
+const progressText = document.querySelector('#progress-text');
+const scoreText = document.querySelector('#score');
+const progressBarFull = document.querySelector('#progress-bar-full');
 
 let currentQuestion = {};
 let acceptingAnswers = true;
