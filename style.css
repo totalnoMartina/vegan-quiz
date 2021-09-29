@@ -88,3 +88,51 @@ h2 {
 #highscores-btn {
     background: #d33f04d3;
 }
+
+/* End page style */
+
+.end-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    width: 600px;
+}
+
+#end {
+    margin: 0 0 0 350px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 200px;
+    padding: 20px;
+    font-size: 22px;
+    border: none;
+    box-shadow: 0 5px 16px 0 #f9db6d;
+}
+
+input::placeholder {
+    color: rgba(39, 141, 8, 0.795);
+}
+
+#username {
+    margin-bottom: 20px;
+    width: 60%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 35px;
+    color: #f9db6d;
+    text-align: center;
+}
+
+#sace-score-btn {
+    border: none;
+}
+
+.fa-laptop-house {
+    margin-left: 20px;
+    color: #247ba0;
+}

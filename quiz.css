@@ -33,12 +33,13 @@ body {
 }
 
 .correct {
-    background: linear-gradient(#93e004) ;
-    color: black;
+    background-color: salmon;
+    color: #93e004;
 }
 
 .incorrect {
-    background: linear-gradient(#a11502da) ;
+    background-color: olivedrab;
+    color: crimson;
 }
  
 .display-quiz {
@@ -47,6 +48,7 @@ body {
 }
 
 .display-prefix {
+    padding-top: 30px;
     text-align: center;
     font-size: 30px;
 }

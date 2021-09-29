@@ -1,5 +1,5 @@
 const question = document.querySelector('#question');
-const choices = Array.from.querySelector('.choice-text');
+const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progress-text');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progress-bar-full');
@@ -14,42 +14,18 @@ let questions = [
     {
         question: 'Which one of these is in fact a berry?',
         choice1: 'cherry',
-        choice1: 'strawberry',
-        choice1: 'cantaloupe',
-        choice1: 'raspberry',
-        answer: cantaloupe,
+        choice2: 'strawberry',
+        choice3: 'cantaloupe',
+        choice4: 'raspberry',
+        answer: 3,
     }, 
     {
-        question: 'Which one of these is in fact a berry?',
-        choice1: 'cherry',
-        choice1: 'strawberry',
-        choice1: 'cantaloupe',
-        choice1: 'raspberry',
-        answer: cantaloupe,
-    },
-    {
-        question: 'Which one of these is in fact a berry?',
-        choice1: 'cherry',
-        choice1: 'strawberry',
-        choice1: 'cantaloupe',
-        choice1: 'raspberry',
-        answer: cantaloupe,
-    }, 
-    {
-        question: 'Which one of these is in fact a berry?',
-        choice1: 'cherry',
-        choice1: 'strawberry',
-        choice1: 'cantaloupe',
-        choice1: 'raspberry',
-        answer: cantaloupe,
-    },
-    {
-        question: 'Which one of these is in fact a berry?',
-        choice1: 'cherry',
-        choice1: 'strawberry',
-        choice1: 'cantaloupe',
-        choice1: 'raspberry',
-        answer: cantaloupe,
+        question: 'Which vegetable contains more protein per calorie than animal based protein?',
+        choice1: 'Carrot',
+        choice2: 'Leek',
+        choice3: 'Broccolli',
+        choice4: 'Spinach',
+        answer: 3,
     },
     {
         question: 'Which one of these is in fact a berry?',
@@ -57,7 +33,23 @@ let questions = [
         choice2: 'strawberry',
         choice3: 'cantaloupe',
         choice4: 'raspberry',
-        answer: cantaloupe,
+        answer: 2,
+    }, 
+    {
+        question: 'Which one of these is in fact a berry?',
+        choice1: 'cherry',
+        choice2: 'strawberry',
+        choice3: 'cantaloupe',
+        choice4: 'raspberry',
+        answer: 4,
+    },
+    {
+        question: 'Which one of these is not a berry?',
+        choice1: 'cherry',
+        choice2: 'blackberry',
+        choice3: 'cantaloupe',
+        choice4: 'blueberry',
+        answer: 1,
     },
     {
         question: 'Which one of these is in fact a berry?',
@@ -65,12 +57,20 @@ let questions = [
         choice2: 'strawberry',
         choice3: 'cantaloupe',
         choice4: 'raspberry',
-        answer: cantaloupe,
+        answer: 3,
+    },
+    {
+        question: 'Which one of these is in fact a berry?',
+        choice1: 'cherry',
+        choice2: 'strawberry',
+        choice3: 'cantaloupe',
+        choice4: 'raspberry',
+        answer: 3,
     }
 ]
 
 const SCORE_POINTS = 100;
-const MAX_QUESTIONS = 4;
+const MAX_QUESTIONS = 7;
 
 function startGame() {
     questionCounter = 0;
@@ -95,7 +95,7 @@ function getNewQuestion() {
     question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
-        const number = choice.dataset('number');
+        const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
     })
 
@@ -106,7 +106,7 @@ function getNewQuestion() {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(acceptingAnswers) return;
+        if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
@@ -120,11 +120,11 @@ choices.forEach(choice => {
 
         selectedChoice.parentElement.classList.add(classToApply);
 
-        function setTimeout(){
+        setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion()
 
-        }; 1000
+        }, 1000)
     })
 })
 
