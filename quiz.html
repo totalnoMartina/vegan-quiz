@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="quiz-area">
+    <div id="quiz-area">
         <div id="quiz" class="justify-center flex-column">
             <div id="display-quiz">
                 <div class="display-item">
@@ -22,12 +22,11 @@
                     </div>
                 </div>
                 <div class="display-item">
-                    <p id="display-prefix">
-                        Score</p>
+                    <p id="display-prefix">Score</p>
                     <h1 class="display-main-text" id="score">0</h1>
                 </div>
-
-            </div id="question">Eating half of avocado a day helps with...?
+            </div>
+            <h1 id="question">Eating half of avocado a day helps with...?</h1>
             <div class="choice-display">
                 <p id="choice-prefix">A</p>
                 <p class="choice-text" data-number="1">answer</p>
@@ -45,8 +44,9 @@
                 <p class="choice-text" data-number="4">answer</p>
             </div>
         </div>
+    </div>
 
-        <script src="quiz.js"></script>
+    <script src="quiz.js"></script>
 </body>
 
 </html>

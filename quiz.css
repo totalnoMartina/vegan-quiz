@@ -1,9 +1,77 @@
 body {
+    text-align: center;
     color: #f9db6d;
 }
 
 .choice-display {
     display: flex;
-    margin-bottom: 0.8rem;
-    max-width: 100%;
+    margin: 20px 0 20px 350px;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    border-radius: 4px;
+    background: #254d32;
+    font-size: 40px;
+    min-width: 400px;
+}
+
+.choice-display:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px #f9db6d;
+    transform: scale(1.02);
+    transform: transform 100ms ;
+}
+
+.choice-prefix {
+    padding: 40px 40px;
+}
+
+.choice-text {
+    padding: 20px;
+    width: 90%;
+}
+
+.correct {
+    background: linear-gradient(#93e004) ;
+    color: black;
+}
+
+.incorrect {
+    background: linear-gradient(#a11502da) ;
+}
+ 
+.display-quiz {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-prefix {
+    text-align: center;
+    font-size: 30px;
+}
+
+.display-text-main {
+    text-align: center;
+
+}
+
+#progress-bar {
+    width: 360px;
+    height: 50px;
+    border: 3px solid #08a9ee;
+    margin: 30px 0 0 10px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progress-bar-full {
+    height: 90%;
+    background: #08a9ee;
+    width: 0%;
+}
+ 
+@media screen and (max-width: 800px) {
+    .choice-display {
+        min-width: 640px;
+    }
 }
