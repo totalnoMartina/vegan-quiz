@@ -5,6 +5,7 @@ body {
 
 .choice-display {
     display: flex;
+    height: 55px;
     margin: 15px auto;
     align-items: center;
     justify-content: center;
