@@ -10,15 +10,14 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-    {
+let questions = [{
         question: 'Which one of these is in fact a berry?',
         choice1: 'Cherry',
         choice2: 'Strawberry',
         choice3: 'Cantaloupe',
         choice4: 'Raspberry',
         answer: 3,
-    }, 
+    },
     {
         question: 'Which vegetable contains more protein per calorie than animal based protein?',
         choice1: 'Carrot',
@@ -34,7 +33,7 @@ let questions = [
         choice3: 'Walnut',
         choice4: 'Almond',
         answer: 2,
-    }, 
+    },
     {
         question: 'Which fruit has better effect on your energy level than coffee?',
         choice1: 'Apple',
@@ -80,7 +79,7 @@ function startGame() {
 };
 
 function getNewQuestion() {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
         return window.location.assign('/end.html');
@@ -88,7 +87,7 @@ function getNewQuestion() {
 
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;  
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
@@ -106,7 +105,7 @@ function getNewQuestion() {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return;
+        if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
@@ -114,8 +113,8 @@ choices.forEach(choice => {
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
-        if(classToApply === 'correct') {
-        incrementScore(SCORE_POINTS);
+        if (classToApply === 'correct') {
+            incrementScore(SCORE_POINTS);
         }
 
         selectedChoice.parentElement.classList.add(classToApply);

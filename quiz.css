@@ -20,7 +20,7 @@ body {
     cursor: pointer;
     box-shadow: 0 8px 16px #f9db6d;
     transform: scale(1.02);
-    transform: transform 100ms ;
+    transform: transform 100ms;
 }
 
 .choice-prefix {
@@ -41,7 +41,7 @@ body {
     background-color: olivedrab;
     color: crimson;
 }
- 
+
 .display-quiz {
     display: flex;
     justify-content: space-between;
@@ -72,7 +72,7 @@ body {
     background: #08a9ee;
     width: 0%;
 }
- 
+
 @media screen and (max-width: 800px) {
     .choice-display {
         min-width: 640px;

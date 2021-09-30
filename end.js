@@ -20,14 +20,14 @@ saveHighScore = e => {
         name: username.value
     }
 
-        highScores.push(score);
+    highScores.push(score);
 
-        highScores.sort((a,b) => {
+    highScores.sort((a, b) => {
             return b.score - a.score;
         }),
 
         highScores.splice(8)
 
-        localStorage.setItem('highScores', JSON.stringify(highScores));
-        window.location.assign('/')
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    window.location.assign('/')
 }
