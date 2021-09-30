@@ -21,10 +21,10 @@ let questions = [{
     {
         question: 'Which vegetable contains more protein per calorie than animal based protein?',
         choice1: 'Carrot',
-        choice2: 'Leek',
-        choice3: 'Broccolli',
+        choice2: 'Broccolli',
+        choice3: 'Leek',
         choice4: 'Spinach',
-        answer: 3,
+        answer: 2,
     },
     {
         question: 'Which one of these is in fact a fruit?',
@@ -60,11 +60,11 @@ let questions = [{
     },
     {
         question: 'Which vegetable is declared the "most hated vegetable" according to many studies?',
-        choice1: 'Cabbage',
+        choice1: 'Brussel Sprouts',
         choice2: 'Broccolli',
-        choice3: 'Brussel Sprouts',
+        choice3: 'Cabbage',
         choice4: 'Kale',
-        answer: 3,
+        answer: 1,
     }
 ]
 
