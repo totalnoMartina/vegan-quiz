@@ -30,14 +30,13 @@ You can break the credits section up into Content and Media, depending on what y
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
+- The code that helped me make this quiz was found on this [link](https://www.youtube.com/watch?v=f4fB9Xg2JEY)
+- The link for some questions can be found [here](https://laidbackgardener.blog/2017/03/23/10-strange-facts-about-vegetables/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- Some questions and answers are inspired by this [page](https://www.eatfirst.com/en-au/c/blog/fun-facts-about-food)
 
 ### Media
 
 - The photos used on the home and sign up page are from This Open Source site
 - The images used for the gallery page were taken from this other open source site
 
-
-Congratulations on completing your Readme, you have made another 
