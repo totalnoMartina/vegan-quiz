@@ -132,6 +132,25 @@ input::placeholder {
     border: none;
 }
 
+.btn-end {
+    font-size: 1rem;
+    padding: 2rem;
+    width: 15rem;
+    text-align: center;
+    margin: 25px;
+    text-decoration: none;
+    color: #f9db6d;
+    background-color: #254d32;
+    border-radius: 15px;
+}
+
+.btn-end:hover {
+    cursor: pointer;
+    box-shadow: 0 1rem 1.5rem #f9db6d;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
 .fa-laptop-house {
     margin-left: 20px;
     color: #247ba0;
