@@ -1,0 +1,15 @@
+body {
+    margin: 150px 0 0 250px;
+    color: #f9db6d;
+}
+
+#highscore-list {
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.highscores {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
